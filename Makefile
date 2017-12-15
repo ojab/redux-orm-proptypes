@@ -5,7 +5,6 @@ clean:
 	rm -rf docs
 
 build: clean
-	npm install
 	$(BIN)/babel src --out-dir lib
 
 test: lint
